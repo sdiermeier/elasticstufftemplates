@@ -52,9 +52,6 @@ Param(
     [string]$discoveryEndpoints,
 	[string]$elasticClusterName,
     [string]$storageKey,
-	[string]$po,
-	[string]$r,
-	[switch]$m,
 )
 
 # To set the env vars permanently, need to use registry location
@@ -506,8 +503,6 @@ function Startup-Output
     if($jdkDownloadLocation.Length -ne 0) { lmsg "Jdk download location: $jdkDownloadLocation" }
     if($elasticSearchBaseFolder.Length -ne 0) { lmsg "Elasticsearch base folder: $elasticSearchBaseFolder" }
     if($discoveryEndpoints.Length -ne 0) { lmsg "Discovery endpoints: $discoveryEndpoints" }
-    if($marvelEndpoints.Length -ne 0) { lmsg "Marvel endpoints: $marvelEndpoints" }
-	if($po.Length -ne 0 -and $r.Length -ne 0) { lmsg "Installing cloud-azure plugin" }
 	lmsg 'Node installation mode: MasterData' }
 }
 
