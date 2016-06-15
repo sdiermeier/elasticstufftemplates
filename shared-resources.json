@@ -34,7 +34,6 @@
   },
   "variables": {
     "storageAccountName": "[parameters('storageSettings').prefix]",
-    "storageAccountNameAFS": "[parameters('storageSettings').afs]",
     "storageAccountNameShared": "[parameters('storageSettings').shared]",
     "externalFELBConfig": [
       {
